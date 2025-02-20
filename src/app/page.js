@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-6 bg-white text-gray-600 border-t border-gray-200">
+      <footer className="text-center py-2 bg-white text-gray-600 border-t border-gray-200">
         &copy; 2025 Truck Command. All rights reserved.
       </footer>
     </main>
