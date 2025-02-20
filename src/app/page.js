@@ -57,11 +57,12 @@ export default function Home() {
 
       {/* Call to Action */}
       <section className="py-20 text-center bg-[#007BFF] text-white">
-        <h3 className="text-3xl font-bold">Start Managing Your Business Better</h3>
-        <p className="mt-6 text-lg">Sign up today and get a 7-day free trial!</p>
-        <a href="/signup" className="mt-12 px-6 py-3 bg-white text-[#007BFF] rounded-md text-lg hover:bg-[#00D9FF]">
-          Start Free Trial
-        </a>
+       <h3 className="text-3xl font-bold">Start Managing Your Business Better</h3>
+       <p className="mt-4 text-lg">Sign up today and get a <strong>7-day free trial!</strong></p>
+       <a href="/signup" className="inline-block mt-6 px-8 py-4 bg-white text-[#007BFF] font-semibold rounded-lg text-lg shadow-md hover:bg-[#00D9FF] hover:text-white transition-all duration-300"
+       >
+       Start Free Trial
+       </a>
       </section>
 
       {/* Footer */}
