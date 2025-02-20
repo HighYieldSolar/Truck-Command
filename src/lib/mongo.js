@@ -1,7 +1,13 @@
-import { MongoClient } from 'mongodb';
+import { MongoClient } from "mongodb";
 
-const client = new MongoClient(process.env.MONGODB_URI);
-export const connectDB = async () => {
-  if (!client.topology) await client.connect();
-  return client.db('truck-command');
-};
+const uri = process.env.MONGODB_URI; // Ensure this is set in .env.local
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+let db;
+export async function connectToDatabase() {
+  if (!db) {
+    await client.connect();
+    db = client.db("your-database-name"); // Replace with your actual database name
+  }
+  return { db, client };
+}
