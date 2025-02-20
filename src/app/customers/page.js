@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { connectDB } from '@/lib/mongo';
 
 export default function Customers() {
   const [customers, setCustomers] = useState([]);
