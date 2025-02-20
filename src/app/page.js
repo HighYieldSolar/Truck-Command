@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Acton */}
       <section className="py-20 text-center bg-[#007BFF] text-white">
        <h3 className="text-3xl font-bold">Start Managing Your Business Better</h3>
        <p className="mt-4 text-lg">Sign up today and get a <strong>7-day free trial!</strong></p>
